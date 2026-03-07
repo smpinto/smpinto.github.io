@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Santiago M. Pinto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SMP</a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="research.html">RESEARCH</a>
+                <a href="cv.html" class="active">CV</a>
+                <a href="other-stuff.html">OTHER STUFF</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero glass-panel fade-in text-center" style="max-width: 800px; margin: 4rem auto;">
+            <h1>Curriculum Vitae</h1>
+            <p class="subtitle mb-1">Click the button below to view or download my latest CV.</p>
+
+            <div style="margin-top: 2.5rem;">
+                <a href="public/cv.pdf" target="_blank" class="btn primary-btn"
+                    style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    Download CV (PDF) &rarr;
+                </a>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-secondary);">
+                <em>(Note: To update this file, simply replace the 'cv.pdf' file inside the 'public' folder)</em>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> Santiago M. Pinto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
