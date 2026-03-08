@@ -1,20 +1,25 @@
 :root {
     /* Color Palette - Premium Academic */
-    --primary-color: #0d2b4f; /* Deep Navy */
-    --secondary-color: #f7ab0a; /* Subtle Gold Accent */
-    --bg-main: #fcfcfc; /* Off-white */
-    --bg-panel: #ffffff; /* Crisp white for cards/panels */
+    --primary-color: #0d2b4f;
+    /* Deep Navy */
+    --secondary-color: #f7ab0a;
+    /* Subtle Gold Accent */
+    --bg-main: #fcfcfc;
+    /* Off-white */
+    --bg-panel: #ffffff;
+    /* Crisp white for cards/panels */
     --text-primary: #1a1a1a;
-    --text-secondary: #5a6b80; /* Slate Gray */
+    --text-secondary: #5a6b80;
+    /* Slate Gray */
     --border-light: rgba(13, 43, 79, 0.1);
-    
+
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    
+
     /* Effects */
-    --shadow-soft: 0 4px 20px rgba(0,0,0,0.03);
-    --shadow-hover: 0 10px 30px rgba(0,0,0,0.06);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.06);
     --border-radius: 12px;
     --transition: all 0.3s ease;
 }
@@ -34,7 +39,10 @@ body {
 }
 
 /* Typography styles */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     color: var(--primary-color);
     margin-bottom: 0.5rem;
@@ -132,7 +140,8 @@ a {
     padding-bottom: 5px;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--primary-color);
 }
 
@@ -200,6 +209,18 @@ a {
     margin-bottom: 2rem;
 }
 
+.hero-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
 .hero-content {
     font-size: 1.1rem;
     max-width: 800px;
@@ -207,6 +228,19 @@ a {
 
 .hero-content p {
     margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    width: 280px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    object-fit: cover;
 }
 
 /* Buttons */
@@ -320,9 +354,17 @@ a {
 }
 
 /* Utilities */
-.mb-1 { margin-bottom: 1rem; }
-.mt-auto { margin-top: auto; }
-.font-weight-bold { font-weight: bold; }
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
 
 /* Animations */
 .fade-in {
@@ -336,11 +378,18 @@ a {
     animation: slideUp 0.8s ease-out forwards;
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
 
 @keyframes fadeIn {
-    to { opacity: 1; }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
@@ -359,17 +408,21 @@ footer {
     margin-top: 3rem;
 }
 
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 /* Responsive Media Queries */
 @media (max-width: 900px) {
     .grid-2-cols {
         grid-template-columns: 1fr;
     }
+
     .side-column {
         flex-direction: row;
     }
-    .side-column > section {
+
+    .side-column>section {
         flex: 1;
     }
 }
@@ -378,9 +431,11 @@ footer {
     body {
         font-size: 15px;
     }
+
     .navbar {
         padding: 0;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -391,31 +446,55 @@ footer {
         background-color: var(--bg-panel);
         border-bottom: 1px solid var(--border-light);
         padding: 1rem 0;
-        box-shadow: 0 10px 10px -10px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
     }
+
     .nav-links.active {
         display: flex;
     }
+
     .nav-links a {
         padding: 1rem 2rem;
         border-radius: 0;
     }
+
     .hamburger {
         display: block;
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .hero h1 { font-size: 2.5rem; }
-    .hero-buttons { flex-direction: column; }
-    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-layout {
+        flex-direction: column-reverse;
+        /* Put buttons/text above image, or just column for text above image */
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
     .side-column {
         flex-direction: column;
     }
