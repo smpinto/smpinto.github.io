@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        details summary::-webkit-details-marker { display:none; }
+        details summary { list-style: none; }
+        details[open] .arrow-icon { transform: rotate(180deg); }
+        .arrow-icon { transition: transform 0.3s ease; display: inline-block; font-size: 0.8rem; margin-top: 4px; }
+        .abstract-box { margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; border-left: 3px solid var(--border-light); padding-left: 1rem; background: rgba(0,0,0,0.01); padding: 1rem; border-radius: 4px; }
+    </style>
 </head>
-
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -30,72 +33,943 @@
             </div>
         </div>
     </nav>
-
     <main class="container">
         <section class="hero glass-panel fade-in">
             <h1>Research</h1>
             <p class="subtitle mb-1">Publications, Working Papers, and Current Projects.</p>
-            <p>My research focuses on applied microeconomics, specifically urban/regional economics, public finance, and
-                trade. Please find a selection of my research below.</p>
+            <p>My research focuses on applied microeconomics, specifically urban/regional economics, public finance, and trade. Please find a selection of my research below.</p>
             <div class="hero-buttons">
-                <a href="https://scholar.google.com/citations?user=TOT0F80AAAAJ&hl=en" target="_blank"
-                    class="btn primary-btn">Google Scholar Page &rarr;</a>
+                <a href="https://scholar.google.com/citations?user=TOT0F80AAAAJ&hl=en" target="_blank" class="btn primary-btn">Google Scholar Page &rarr;</a>
             </div>
         </section>
 
-        <!-- Working Papers -->
-        <section class="glass-panel slide-up display-flex-col" style="margin-top:2rem;">
-            <h3>Working Papers</h3>
+        <section class="glass-panel slide-up delay-0 display-flex-col" style="margin-top:2rem;">
+            <h3>Academic Publications</h3>
             <div class="timeline" style="margin-top: 1rem;">
                 <ul>
-                    <!-- Instructions for future updates -->
                     <li>
-                        <div class="date">2026</div>
-                        <div class="role">Working Paper Title Example</div>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Co-authors.
-                            <br> <a href="public/example-paper.pdf" class="text-link" target="_blank">Download PDF</a>
-                        </p>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Information Content and Statistical Properties of Diffusion Indices</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">International Journal of Central Banking, Issue 63, September 2020</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto, Pierre-Daniel G. Sarte, Robert Sharp</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We study diffusion indexes constructed from qualitative surveys to provide real-time assessments of various aspects of economic activity. In particular, we highlight the role of diffusion indexes as estimates of change in a quasi-extensive margin, and characterize their distribution, focusing on the uncertainty implied by both sampling and the polarization of participants' responses. Because qualitative tendency surveys generally cover multiple questions around a topic, a key aspect of this uncertainty concerns the coincidence of responses, or the degree to which polarization co-moves, across individual questions. We illustrate these results using microdata on individual responses underlying different composite indexes published by the Michigan Survey of Consumers. We find a secular rise in consumer uncertainty starting around 2000, following a decade-long decline, and higher agreement among respondents in prior periods. In 2014, six years after the Great Recession, uncertainty arising from the polarization of responses in the Michigan Survey stood at its highest level, coinciding with the weakest recovery in U.S. postwar history. The formulas we derive allow for simple computations of approximate confidence intervals, thus affording a more complete real-time assessment of economic conditions using qualitative surveys.</div>
+                        </details>
                     </li>
                     <li>
-                        <div class="date">2025</div>
-                        <div class="role">Another Working Paper Title</div>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Co-authors.
-                            <br> <a href="#" class="text-link" target="_blank">Download PDF</a></p>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Distance and Decline: The Case of Petersburg, Virginia</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Journal, Vol. 22, 2018: 1-28</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Raymond Owens III & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Petersburg, Virginia, prospered over two centuries as a center of production and trade. However, the city experienced economic difficulties beginning in the 1980s as a large number of layoffs at production plants in the area coincided with an erosion of retail trade in the city. Prolonged economic decline followed. In contrast, somewhat similar shocks in other moderate-sized cities in Virginia were followed by gradual economic recovery. We examine these differing outcomes and offer an explanation that hinges on the proximity of Petersburg to its larger neighbor, the greater Richmond area. We find evidence suggesting that after the job declines, higher-skilled residents in Petersburg initially commuted to jobs nearer to Richmond, later relocating from Petersburg toward Richmond-an option not readily available in the other Virginia cities considered. We suggest that, as a result, Petersburg suffered a sharp decline in tax revenues and that municipal costs could not be proportionately scaled down, leading to severe fiscal stress.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Unauthorized Immigration and Fiscal Competition</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">European Economic Review, Vol. 92, February 2017: 282-305</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Subhayu Bandyopadhyay, Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Reflecting upon recent enforcement policy activism of US states and countries within the EU towards unauthorized workers, we examine the overlap of centralized (federal) and decentralized (state or regional) enforcement of immigration policies in a spatial context. Among other results, we find that if interstate mobility is costless, internal enforcement is overprovided, and border enforcement and local goods are underprovided when regions take more responsibility in deciding policies. This leads to higher levels of unauthorized immigration under decentralization. Interregional migration costs moderate such over/underprovision. Moreover, income distributive motives in the host country may shape the design of immigration policies in specific ways. The basic model is extended in several ways. First, we study how the policies change when regions can exclude unauthorized immigrants from the consuming of regionally provided goods or services. Second, we assume that the potential number of unauthorized immigrants is endogenous. And finally, we examine the effect of considering an alternative spatial configuration that includes border and “interior” regions.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Social Interactions and the Effectiveness of Regional Policies</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Review of Regional Studies, Vol. 46, 2016: 117-126</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Why does the implementation of urban policies with similar characteristics achieve disparate results? Why do the same policies work in certain social and economic environments, but not in others? What are the reasons explaining the varied outcomes? This presentation claims that social interactions, including neighborhood and network effects, may play a key role at explaining the effectiveness of urban policies. It is argued that the availability of new and better information, such as recent data obtained from social experiments, might provide new insights on how non-market interactions may condition policy interventions in an urban setting.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Urban Crime and Labor Mobility</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Public Economic Theory, Vol. 13, June 2011: 443-462</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Subhayu Bandyopadhyay, Santiago Pinto, Christopher H. Wheeler</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Two municipalities within a metropolitan statistical area (MSA) determine the level of local law enforcement. Enforcement reduces and diverts crime. The former confers a spillover benefit; the latter a spillover cost. When labor is mobile, welfare necessarily declines: if enforcement is too high (low) under labor immobility, it is raised (reduced) further under mobility. If municipalities have different enforcement costs, mobility reduces welfare for the high-cost municipality and for the MSA, but the effect is ambiguous on the low-cost municipality. Finally, when residents choose between productive and criminal activities, enforcement is more likely to be overprovided.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Crime in a Multi-Jurisdictional Model with Private and Public Prevention</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Regional Science, Vol. 49, December 2009: 977-996</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Kangoh Lee & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Criminals move between jurisdictions in response to differences in the net returns to crime that depend on the opportunity for crime and the effort to prevent crime. An increase in police protection of a jurisdiction diverts crime to other jurisdictions when only public crime prevention such as police protection is available. However, residents also invest in private prevention (private security, burglar alarms, etc.), and the value of these measures depends on the level of local public protection. In a spatial context, an increase in public prevention of a jurisdiction not only alters the incentives of individuals of the jurisdiction, but also of other jurisdictions as well, and such a change in private crime prevention may end up attracting crime to the jurisdiction. An increase in public prevention of a jurisdiction thus may divert or attract crime. This ambiguous effect stands in contrast with the literature and may appear counterintuitive, but is logical under plausible conditions. The Politics of Investment: Partisanship and the Sectoral Allocation of Foreign Direct Investment Economics & Politics, Vol. 20, June 2008: 216-254 Pablo Pinto & Santiago Pinto Abstract This paper explores the existence of partisan cycles in foreign direct investment performance. Our theoretical model predicts that the incumbent government's partisanship should affect foreign investors' decision to flow into different sectors of the host country: pro-labor governments would encourage the inflow of the type of investment that complements labor in production; pro-capital governments would promote the entry of investment that substitutes for labor. Empirical evidence from a sample of Organisation for Economic Co-operation and Development countries reveals a pattern of foreign investors' response to partisan cycles consistent with the predictions of the model. First, foreign investment systematically flows into different sectors of the host economy under left- and right-leaning incumbents. Second, we find a positive correlation between foreign investment and changes in average wages under left-leaning incumbents, but no effect on wages under right-leaning governments.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Bank Branching Deregulation: A Spatial Competition Model</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Anales de Estudios Económicos y Empresariales. Issue 17, pp. 87-108, 2007</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Jorge Guillén & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> This paper develops a theoretical model of spatial competition be- tween banks that attempts to explain the rationale behind the implementation of federal branching restrictions in the U.S. banking industry in 1927, and their subsequent elimination in 1994. The model considers two difierent settings. The flrst one assumes that banks cannot open a branch in another state or region, and the second one considers that there are no branching restrictions. We derive the Nash Equilibria when banks compete in interest rates ofiered to investors located in difierent regions and determine winners and losers in each case. We also examine the conditions under which banks would flnd it profltable to open a branch in another region in terms of the costs of performing long-distance transactions. We show that when these costs decline (for instance, as a result of technological innovations in the banking industry), banks do not flnd it attractive to open branches elsewhere. Hence, any regulation that prevents branching restrictions simply becomes obsolete. In light of the conclusions of the model, the elimina- tion of these restrictions can be understood as an attempt to bring regulatory standards in accordance with economic reality.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Tax Competition in the Presence of Interjurisdictional Externalities: The Case of Crime Prevention</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Regional Science, Vol. 47, December 2007: 897-913</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> The paper analyzes the effect of fiscal competition when local governments choose the level of public goods that generate spillover effects elsewhere. For instance, law enforcement activities affect both the crime level in the jurisdiction providing the good and in neighboring communities. The model shows that when local governments rely on capital taxation to finance these expenditures the spillover effects may not lead to an inefficient provision of public goods as predicted by the tax competition literature. In the model, capital is costlessly mobile and offenders relocate responding to differential criminal opportunities and differential local law enforcement efforts.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Corporate Profit Tax, Capital Mobility, and Formula Apportionment</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Urban Economics, Vol. 62, July 2007: 76-102</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> The paper develops an analytical framework in which regional governments strategically determine the structure of the corporate profit tax system when an apportionment formula determines the proportion of the firms' income subject to regional taxation. The conclusions can be summarized as follows: (i) Regional governments subsidize capital through the corporate tax system. (ii) Tax rates become higher and the portion of capital costs that can be deducted from taxable income becomes smaller as the formula weighs more production shares. (iii) The regionally provided good may be below or above the efficient level. (iv) The extent of the distortion depends on the particular formula put into practice. (v) Regional governments strictly prefer a formula that exclusively weighs the production proportion to any other alternative.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Choosing a Place to Live and a Workplace</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Económica, Vol. 52, 2006: 15-51</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Huberto M. Ennis, Santiago Pinto, Alberto Porto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We study how fiscal policies and commuting costs determine the geographical distribution of workers and households in an economy. We characterize equilibrium outcomes in a simple two-region model with commuting costs, local public goods, and local infrastructure. We also provide a short survey of the related economic literature that discusses other important factors driving the localization decisions of agents. Finally, we argue that the issues raise in this paper play a significant role in the geographic distribution of economic activity in the Greater Buenos Aires urban area of Argentina.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Equality of Opportunity and Optimal In-Kind and In-Cash Policies</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Public Economics, Vol. 90, January 2006: 143-169</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Leonardo Gasparini, Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> This paper examines the argument for public provision of certain private goods, like education and health, based on equality of opportunity by studying the utility possibility frontier of a society in which there is a concern for the distribution of these goods. A given quality of education or health services can be consumed for free in the public sector, but people can opt-out and purchase their desired quality levels in the private sector. Some of the conclusions are: (i) a pure cash transfer is optimal when the utility redistribution is either “sufficiently” small or large; (ii) if and only if both the equality-of-opportunity concern and the utility redistribution are large enough, can an in-kind program which attracts the whole population be justified; (iii) even when everybody chooses the in-kind program, it may be optimal to perform some additional utility redistribution by increasing the size of such program.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Assistance to Poor Households When Income is Not Observed: Targeted In-Kind and In-Cash Transfers</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Urban Economics, Vol. 53, November 2004: 536-553</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Policymakers frequently design self-targeting programs or target poor areas to assist poor families when income is not observed. Self-targeting schemes take advantage of differences in participation costs in assistance programs across households. Geographic targeting assumes that transfers are solely determined by the region of residence: to receive the benefits, households not initially present in the targeted areas must relocate away from their original place of residence and live with the poor, which entails a cost that can also be interpreted as a participation cost in the assistance program. The paper shows that a combination of in-kind and in-cash transfers tied to the consumption of a publicly provided private good targeted to the poor becomes very useful when non-poor households have different participation costs. By distinguishing users and non-users of public facilities additional in-cash transfers can be directed to the poor more effectively. The paper demonstrates that the publicly provided good ends up being undersupplied, and the distortion becomes less important as participation costs rise. More importantly, it shows that this kind of redistributive program dominates a pure in-cash scheme.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Residential Choice, Mobility, and the Labor Market</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Journal of Urban Economics, Vol. 51, MAY 2002: 469-496</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> There is substantial evidence suggesting that the process of suburbanization creates new job opportunities that are not equally exploited by all workers. In order to explain this phenomenon, a simple model is developed which incorporates borrowing constraints as an important restriction on moving decisions, obstructing the necessary labor flows between jurisdictions required to equalize (net) wages. In essence, people who cannot borrow will be restricted in terms of their capability to change residence location and, therefore, will have limited possibilities of working in distant labor markets, or they will be subject to excessive commuting. Furthermore, the labor allocation induced by households' behavior facing these constraints affects consumer welfare, production, and producers' profits. The outcomes with perfect credit markets and with borrowing restrictions are calculated, and the economic welfare levels are compared. As wages are flexible, they adjust to reflect the relative scarcity of workers present in each jurisdiction. Consequently, some of the negative effects of the borrowing constraints are compensated, so the outcomes cannot be easily compared. Some numerical examples are constructed to have an idea of the possible outcomes under different conditions. Finally, it is found that allowing for moving cost deductions from taxable income may help to alleviate the problem.</div>
+                        </details>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <!-- Selected Publications -->
         <section class="glass-panel slide-up delay-1 display-flex-col" style="margin-top:2rem;">
-            <h3>Selected Publications</h3>
+            <h3>Bank Publications</h3>
             <div class="timeline" style="margin-top: 1rem;">
                 <ul>
                     <li>
-                        <div class="date">Journal Name, Year</div>
-                        <div class="role">Publication Title Here</div>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Co-authors.
-                            <br> <a href="#" class="text-link" target="_blank">View Article</a></p>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Impacts of Government Spending Changes on Local Economies</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 25-28, July 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Sonya Ravindranath Waddell</p>
+                            </summary>
+                        </details>
                     </li>
                     <li>
-                        <div class="date">Journal Name, Year</div>
-                        <div class="role">Another Publication Title</div>
-                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Co-authors.
-                            <br> <a href="#" class="text-link" target="_blank">View Article</a></p>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Might Cuts in Federal Government Spending Mean for the Fifth District?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Regional Matters | March 21, 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Stephanie Norris, Santiago Pinto &Sonya Ravindranath Waddell</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Might Cuts to the Federal Government Workforce Mean for the Fifth District?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Regional Matters | March 4, 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Stephanie Norris, Santiago Pinto &Sonya Ravindranath Waddell</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Understanding Diffusion Indexes: Insights and Applications</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 25-05, February 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Commuting Patterns and Characteristics of Fifth District Counties</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 24-24, August 2024</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Sierra Stoney</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Are Place-Based Policies a Boon for Everyone?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 24-7, February 2024</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Pandemic’s Effects on Children’s Education.</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 23-29, AUGUST 2023</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Commuting Patterns and Economic Connectivity in the Fifth District</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 22-47, November 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Sierra Stoney</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">How Connected Are Counties in the Fifth District?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Regional Matters | October 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Sierra Stoney</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Why Use a Diffusion Index?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 22-22, June 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Sonya Ravindranath Waddell</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">How Does Trade Policy Get Decided?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | No. 22-11, March 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Trends in Criminal Activity, Crime Reporting, and Public Perceptions</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ focus | Fourth Quarter, September 2021</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Raymond E. Owens III & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Do Recent Studies Say About Crime and Policing? Part 2</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ brief| 21-29b, September 2021</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Raymond E. Owens III, Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Do Recent Studies Say About Crime and Policing? Part 1</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ brief| 21-29A, September 2021</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Raymond E. Owens III & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">State and Local Governments: Economic Shocks and Fiscal Challenges</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">REGIONAL MATTERS | OCTOBER 20, 2020</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">John Mullin & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Do Diffusion Indices Tell Us?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">REGIONAL MATTERS | OCTOBER 29, 2019</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Long-Term Effects of Educational Disruptions</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Special Report | May 22, 2020</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto, John Bailey Jones</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Transportation and Commuting Patterns: A View from the Fifth District</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ Focus | Second/Third Quarter 2019</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Sentiment Analysis of the Fifth District Manufacturing and Service Surveys</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Quarterly | Third Quarter 2019</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> This article uses basic text analytic techniques to examine the sentiment embodied in two surveys conducted by the Richmond Fed: the Manufacturing and Service Sector Surveys. Specifically, the article develops several sentiment indicators based on the comments provided by survey participants, contrasts the sentiment measures against responses to other survey questions, and analyzes the monthly evolution of the sentiment indicators during the period 2002-18. Two main conclusions emerge from the analysis. First, the indicators reflect reasonably well changes in economic sentiment along time. Second, negative sentiment has been increasing since approximately August 2017. However, during this same period, the composite DI reported by the Richmond Fed (an indicator that intends to capture the strength of economic conditions in the Fifth District) has been increasing as well.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Can We Learn from Online Wage Postings? Evidence from Glassdoor</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Quarterly | Fourth Quarter 2018</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Marios Karabarbounis & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We use millions of user-entry salaries from Glassdoor to evaluate how well data from online wage postings compare with more traditional, aggregated data, such as the Quarterly Census for Employment and Wages (QCEW) or household-level data such as the Panel Study of Income Dynamics (PSID). We perform our analysis across industries as well as geographical areas. We find that industry employment shares differ substantially between Glassdoor and QCEW. However, the correlation between industry- and region-specific average salaries in Glassdoor and the QCEW is fairly high. Similarly, the within-industry dispersion in salaries in Glassdoor is fairly close to the dispersion in the PSID.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Land-Use Regulations: A View from the Fifth District</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ Focus | First Quarter 2018</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Rise and Decline of Petersburg, Va</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ Focus | Fourth Quarter 2017</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Anne A. Burnett, Raymond E. Owens III & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Unauthorized Immigration: Evaluating the Effects and Policy Responses</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | January 2018</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Tim Sablik</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Responding to Urban Decline</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Brief | July 2017</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & Tim Sablik</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Using the Richmond Fed Manufacturing Survey to Gauge National and Regional Economic Conditions</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Quarterly | First-Fourth Quarter 2017</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Nika Lazaryan & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We evaluate the Federal Reserve Bank of Richmond (FRBR) manufacturing survey and assess its contribution to explaining national and regional economic conditions. Specifically, we examine the predictive accuracy of a variety of static and dynamic models. The models include the composite diffusion index reported by the FRBR and other information readily available from the FRBR surveys but not currently employed in the calculation of the composite index. The paper concludes, first, that the diffusion indices currently reported perform reasonably well at explaining both the national and the regional economy. Second, it is possible to improve the predictive power of the indices by considering models that account for a richer dynamic structure given the high persistence of the series under study. Third, the predictive accuracy of the current FRBR composite index can be improved further by adjusting the weights used in its calculation and by including other diffusion indices. Also, the composite indices that track the national and regional economy would not necessarily be the same, and the paper provides a few insights on what those diffusion indices would look like.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">WHY IT MATTERS: COUNTING THE UNAUTHORIZED IMMIGRANT POPULATION</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">REGIONAL MATTERS | MAY 9, 2017</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">SOCIAL NETWORKS AND ECONOMIC OUTCOMES: EVIDENCE FROM REFUGEE RESETTLEMENT PROGRAMS</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ FOCUS | THIRD/FOURTH QUARTER 2016</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">TEXT ANALYTICS: USING SURVEY COMMENTS FOR SENTIMENT ANALYSIS</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">REGIONAL MATTERS | DECEMBER 5, 2016</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">UNDERSTANDING URBAN DECLINE</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">ANNUAL REPORT | 2016</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & TIM SABLIK</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">SHOW AND TEL: ARE TAX AND EXPENDITURE LIMITATIONS EFFECTIVE?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">ECON FOCUS | SECOND QUARTER 2015</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">JOSEPH MENGEDOTH & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">MONITORING ECONOMIC ACTIVITY IN REAL TIME USING DIFFUSION INDICES: EVIDENCE FROM THE FIFTH DISTRICT</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Economic Quarterly | Fourth Quarter 2015</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto, SONYA RAVINDRANATH WADDELL & PIERRE-DANIEL G. SARTE</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We provide an analysis that parses out the conditions under which diffusion indices based on disaggregated information are informative about overall economic activity. Building on work by Pinto, Sarte, and Sharp (2015), we highlight the fact that diffusion indices, appropriately scaled, capture contributions of changes in the extensive margin — e.g. how many sectors are growing or declining rather than by how much individual sectors are growing or declining — to aggregate growth. In the Fifth Federal Reserve District, for example, this margin captures the bulk of variations in aggregate employment growth. We then show that the Fifth District employment index, produced in real time using firm-level surveys, closely tracks a synthetic diffusion index constructed ex post using observed data. However, we also underscore that diffusion indices have their limitations. In the Fifth District, for example, the growth rate of average wages (relative to its mean) is frequently of a sign opposite to that indicated by changes in the extensive margin. Finally, we explore some of the implications of producing diffusion indices at a more localized level.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">WHY DOES THE FED STUDY REGIONAL ECONOMICS?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">ECONOMIC BRIEF | JANUARY 2015, NO. 15-01</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Ann Battle Macheras, Santiago Pinto, Jessie Romero & Pierre-Daniel G. Sarte</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">STATES' EFFORTS TO CURTAIL UNAUTHORIZED IMMIGRATION DRAW MORE ATTENTION</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">THE REGIONAL ECONOMIST | july 2015</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Subhayu Bandyopadhyay, Jonathan Munemo & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Urban Crime: Deterrence and Local Economic Conditions</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ Focus | Fourth Quarter 2013</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">State Corporate Income Tax and Multistate Corporations</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Econ Focus | Second Quarter 2013</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
                     </li>
                 </ul>
             </div>
         </section>
-
+        <section class="glass-panel slide-up delay-2 display-flex-col" style="margin-top:2rem;">
+            <h3>Books & Book Chapters</h3>
+            <div class="timeline" style="margin-top: 1rem;">
+                <ul>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">FROM THE REGIONAL ECONOMY TO THE MACROECONOMY</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">HANDBOOK OF REAL ESTATE AND MACROECONOMICS, CH. 13 | EDWARD ELGAR PUBLISHING, 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto & pierre-daniel g. sarte</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> This chapter describes how two fields that traditionally evolved mostly separately, regional economics and macroeconomics, have increasingly come together over the past decade and a half to yield new insights into the relevance of regional forces for the macroeconomy. This chapter gives an overview to the basic question: why should macroeconomists care about the spatial allocation of economic activity or spatial models? There are no simple spatial aggregation theorems that give rise to an aggregate production function, and this chapter describes the variety of ways in which granular considerations and shocks that are regional in nature shape aggregate outcomes and motivate a need for policy. Moreover, understanding the role of frictions and spatial externalities in determining where individuals and firms locate, and, in general, how they affect the spatial distribution of resources, is also relevant for macroeconomists. The macroeconomics literature is increasingly heading in the direction of unpacking the exact nature of granular forces in a way that leaves the representative agent and firm framework with aggregate shocks as an early and poor approximation to how actual economies work.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">ASSESSING THE EFFECTIVENESS OF URBAN POLICIES: HOW DO SOCIAL INTERACTIONS INFLUENCE POLICY OUTCOMES?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">THE MODERNITY OF WORK AND PLACE: JANE JACOBS AND THE DESIGN OF THE 21ST CENTURY CITY | 2019</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto | EDITED BY SHANNON MCKAY, SUZANNE MOOMAW</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">REGIONAL POLICY AND FISCAL COMPETITION</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Regional Research Frontiers Vol. 1 | Springer, 2017</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto | Edited by Randall Jackson &Peter Schaeffer</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Governments around the world implement policies aimed at developing certain geographic areas or regions within their respective countries. During the last few decades, local authorities have been assuming a predominant role in the design and execution of these policies. It has been argued that the decentralization of such responsibilities can potentially induce regional governments to behave strategically, initiating a fiscal competition game that would diminish the effectiveness of regional policies. This chapter critically reviews some of the most recent advancements in the literature, focusing on the work that examines the impact of fiscal competition on policy outcomes. At the same time, it intends to identify issues that require further study and provide guidance on the direction of future research in the area.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">POLITICS AND FOREIGN DIRECT INVESTMENT</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">UNIVERSITY OF MICHIGAN PRESS, 2012</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">NATHAN JENSEN, GLENN BIGLAISER, QUAN LI, EDMUND MALESKY, PABLO PINTO & Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Argentina's privatization: effects on income distribution</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">In: Reality Check: The Distributional Impact of Privatization in Developing Countries | The Brookings Institute, 2005</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Huberto M. Ennis & Santiago Pinto| edited by John Nellis & Nancy Birdsall</p>
+                            </summary>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="glass-panel slide-up delay-0 display-flex-col" style="margin-top:2rem;">
+            <h3>Working Papers & Other Publications</h3>
+            <div class="timeline" style="margin-top: 1rem;">
+                <ul>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Taxation, Compliance, and Clandestine Activities</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Working Papers 2025-005, Federal Reserve Bank of St. Louis | 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Subhayu Bandyopadhyay, Sugata Marjit, Santiago Pinto & Marcel Thum</p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Heterogeneous Districts, Interests, and Trade Policy</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Working Papers No. 23-12, Federal Reserve Bank of Richmond | 2023</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Kishore Gawande, Pablo Pinto & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Congressional districts are political entities with heterogeneous trade policy preferences due to their diverse economic structures. Representation of these interests in Congress is a crucial aspect of trade policymaking that is missing in canonical political economy models of trade. In this paper, we underscore the influence of districts by developing a political economy model of trade with region-specific factors. Using 2002 data from U.S. Congressional Districts, we first characterize the unobserved district-level demand for protection. Extending the model beyond the small country assumption to account for export interests as a force countering protection, we develop a model of national tariff-setting. The model predictions are used to estimate the welfare weights implied by tariff and non-tariff measures enacted nationally. Our supply-side explanation for trade policy, while complementing Grossman and Helpman (1994), reveals district and industry-level patterns of winners and losers, central to understanding the political consequences of trade and the backlash against globalization.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Una aproximación al comercio interprovincial en Argentina</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Ideas de Peso, Blog del Banco Central de la República Argentina | 30 de abril, 2018</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Pedro Elosegui & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Congressional districts are political entities with heterogeneous trade policy preferences due to their diverse economic structures. Representation of these interests in Congress is a crucial aspect of trade policymaking that is missing in canonical political economy models of trade. In this paper, we underscore the influence of districts by developing a political economy model of trade with region-specific factors. Using 2002 data from U.S. Congressional Districts, we first characterize the unobserved district-level demand for protection. Extending the model beyond the small country assumption to account for export interests as a force countering protection, we develop a model of national tariff-setting. The model predictions are used to estimate the welfare weights implied by tariff and non-tariff measures enacted nationally. Our supply-side explanation for trade policy, while complementing Grossman and Helpman (1994), reveals district and industry-level patterns of winners and losers, central to understanding the political consequences of trade and the backlash against globalization.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Distance and Decline: The Case of Petersburg, Virginia</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Working Papers No. 18-16, Federal Reserve Bank of richmond | 2018</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Raymond E. Owens III & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> Petersburg, Virginia, prospered over two centuries as a center of production and trade. However, the city experienced economic difficulties beginning in the 1980s as a large number of layoffs at production plants in the area coincided with an erosion of retail trade in the city. Prolonged economic decline followed. In contrast, somewhat similar shocks in other moderate-sized cities in Virginia were followed by gradual economic recovery. We examine these differing outcomes and offer an explanation that hinges on the proximity of Petersburg to its larger neighbor, the greater Richmond area. We find evidence suggesting that after the job declines, higher-skilled residents in Petersburg initially commuted to jobs nearer to Richmond, later relocating from Petersburg toward Richmond-an option not readily available in the other Virginia cities considered. We suggest that, as a result, Petersburg suffered a sharp decline in tax revenues and that municipal costs could not be proportionately scaled down, leading to severe fiscal stress.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">URBAN TRANSPORTATION AND INTER-JURISDICTIONAL COMPETITION</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">FRBR WORKING PAPERS | OCTOBER 2017, no. 17-10</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> It is well-known that competition for factors of production, including competition for residents, affects the public services provided in the communities. This paper considers the determination of local investment in urban transport systems. Many specialists question the effectiveness of the current U.S. top-to-bottom transportation institutional arrangement in which the federal government plays a dominant role and recommend a shift toward a decentralized organization. We examine how such a shift would affect the levels of transport investment. Specifically, we consider a model of two cities, and assume, as in Brueckner and Selod (2006), that transport systems are characterized by different time and money costs. We compare the outcomes reached when the transport system is decided by a central authority (a state or federal government) to the one decided by each jurisdiction in a decentralized way. In the latter case, city or local transportation authorities choose the system that maximizes residents’ welfare, taking as given the decisions made elsewhere, essentially competing for residents (or workers). Our analysis shows that even though a shift toward a decentralized arrangement of the transportation system would generally lead to overinvestment (relative to the centralized case), the extent of this bias depends on the specific factors that drive transport authorities in deciding the transportation system, on the landownership structure, and on the financing arrangements in place. The paper also shows that, in a more general setup, when the two cities differ in their productivity levels, the more productive city will tend to overinvest in transportation systems that connect the two cities, and the less productive city will tend to underinvest in those systems.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Learning About Consumer Uncertainty From Qualitative Surveys: As Uncertain As Ever</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">FRBR WORKING PAPERS | AUGUST 2015, no. 15-09</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto, PIERRE-DANIEL G. SARTE & ROBERT SHARP</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> We study diffusion indices constructed from qualitative surveys to provide real-time assessments of various aspects of economic activity. In particular, we highlight the role of diffusion indices as estimates of change in a quasi extensive margin, and characterize their distribution, focusing on the uncertainty implied by both sampling and the polarization of participants' responses. Because qualitative tendency surveys generally cover multiple questions around a topic, a key aspect of this uncertainty concerns the coincidence of responses, or the degree to which polarization comoves, across individual questions. We illustrate these results using microdata on individual responses underlying different composite indices published by the Michigan Survey of Consumers. We find a secular rise in consumer uncertainty starting around 2000, following a decade-long decline, and higher agreement among respondents in prior periods. Six years after the Great Recession, uncertainty arising from the polarization of responses in the Michigan Survey stands today at its highest level since 1978, coinciding with the weakest recovery in U.S. post-war history. The formulas we derive allow for simple computations of approximate confidence intervals, thus affording a more complete realtime assessment of economic conditions using qualitative surveys.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Medidas de eficiencia relativa en el sector público local: Un resumen crítico de la literatura y una aplicación al sector educativo</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">Cuadernos de Economía, No. 39 | MINISTERIO DE ECONOMÍA de la Provincia de Buenos Aires | 1999</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Leonardo Gasparini & Santiago Pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Summary:</strong> Trabajo que constituye un avance en el análisis y aplicación de medidas de eficiencia relativa del sector público local. Está compuesto de dos capítulos. En el primero hace un resumen crítico de la literatura teórica y empírica sobre el tema. Pone especial énfasis en puntualizar las ventajas y deficiencias de cada metodología en cuanto a su validez teórica y aplicabilidad empírica. El segundo capítulo advierte los problemas de interpretación que pueden tener los procedimientos usados tradicionalmente para medir eficiencia, aunque no se descarta su uso cuando existen restricciones importantes de información. En genera y cuando es viable, se recomienda el uso de técnicas un poco más sofisticadas. Una de las técnicas no paramétrica de fronteras determinísticas, es utilizada en el capítulo 2 para estudiar la eficiencia relativa en el sector educativo de los gobiernos provinciales y de los municipios de la provincia de Buenos Aires. A pesar de que se trata de un primer avance en la aplicación de esta metodología y que la información sobre la que se basa es escasa, se obtienen resultados interesantes.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Especificacion de Preferencias Sociales Implıcitas: Sistema de Impuestos Indirectos en Argentina, 1986-1987</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">DTE 198, DTP 58, Documento de Posgrado, Instituto Torcuato Di Tella | Noviembre 1995</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Santiago Pinto</p>
+                            </summary>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="glass-panel slide-up delay-1 display-flex-col" style="margin-top:2rem;">
+            <h3>Presentations & Podcasts</h3>
+            <div class="timeline" style="margin-top: 1rem;">
+                <ul>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Class Dismissed: The Economic Cost of Pandemic Learning Loss</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">District Dialogues | November 14, 2024</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                            <div class="abstract-box"><strong>About the Event:</strong> Imagine a classroom where the vibrant energy of students learning and growing is abruptly silenced. Schools worldwide shut their doors as the COVID-19 pandemic sweeps across nations, leaving millions of students isolated from their teachers and peers. Online learning becomes the new norm, but the digital divide and lack of resources create significant barriers. Join us Thursday, November 14, for the next installment in our District Dialogues series as we bring together economists, educators and policymakers to analyze how prolonged school closures and remote learning have affected student achievement and how it could impact our future workforce and economy. Attendees will gain insights into the longterm economic consequences of educational setbacks, including potential impacts on workforce productivity, educational inequality and economic growth.</div>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Ongoing Recovery From Pandemic-Era Learning Losses</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | January 22, 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Is There a Place for Place-Based Policies?</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | April 10, 2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">Learning Losses During the Pandemic</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | October 11, 2023</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Daily Commute: Connections Between Communities</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | March 15, 2023</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">What Surveys Say About the Regional and National Economy</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | December 7, 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">The Economics of Crime and Policing</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | February 10, 2022</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">DISTRICT DIALOGUES: EDUCATIONAL DISPARITIES AND COVID-19 SESSION 2: UNDERSTANDING THE EFFECTS</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">MARCH 4, 2021</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">COVID-19 AND THE CLASSROOM</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">SPEAKING OF THE ECONOMY | NOVEMBER 4, 2020</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;"></p>
+                            </summary>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="glass-panel slide-up delay-2 display-flex-col" style="margin-top:2rem;">
+            <h3>Current And Ongoing Research</h3>
+            <div class="timeline" style="margin-top: 1rem;">
+                <ul>
+                    <li>
+                        <details>
+                            <summary style="cursor: pointer; outline: none;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                    <div class="role" style="max-width: 90%;">District Heterogeneity, Legislative Bargaining, and Trade Policy</div>
+                                    <span class="arrow-icon" style="color:var(--primary-color);">▼</span>
+                                </div>
+                                <div class="date">2025</div>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.2rem;">Kishore Gawande, Pablo M. pinto & Santiago M. pinto</p>
+                            </summary>
+                            <div class="abstract-box"><strong>Abstract:</strong> The diverse economic structures of Congressional districts generate heterogeneous trade policy preferences among these political entities. The crucial role of these district-level interests in determining trade policy in Congress is largely absent in canonical political economy models of trade (e.g. Grossman and Helpman, 1994). We address this gap by modeling the aggregation of diverse district preferences into a national trade policy. Our supply-side explanation for trade policy builds on the legislative bargaining framework of Celik, Karabay and McLaren (2013).</div>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-
     <footer>
         <div class="container text-center">
             <p>&copy; <span id="year"></span> Santiago M. Pinto. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
-
 </html>
