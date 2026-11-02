@@ -3,7 +3,12 @@ Google Sites/
 __pycache__/
 .memory/
 .agents/
+.claude/
+.vscode/
+.geminiignore
 CLAUDE.md
 AGENTS.md
+check_publications.py
+scratch_*.json
 *.pyc
 research.pdf
