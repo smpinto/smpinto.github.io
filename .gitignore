@@ -1,0 +1,6 @@
+# Ignore local archive / non-website folders so git and Dropbox ignore them
+Google Sites/
+__pycache__/
+.memory/
+*.pyc
+research.pdf
