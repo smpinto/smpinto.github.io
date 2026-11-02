@@ -1,6 +1,9 @@
-# Ignore local archive / non-website folders so git and Dropbox ignore them
+# Ignore local archive / non-website folders and agent metadata so git and Dropbox ignore them
 Google Sites/
 __pycache__/
 .memory/
+.agents/
+CLAUDE.md
+AGENTS.md
 *.pyc
 research.pdf
